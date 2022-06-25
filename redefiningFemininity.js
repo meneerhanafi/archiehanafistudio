@@ -1,86 +1,68 @@
-//HOMEPAGE
-const allContainer = document.querySelector('.all-container');
-const entrance = document.querySelector('.entrance');
-const bg = document.querySelector('.bg');
-const header =document.querySelector('header');
-const nav = document.querySelector('nav');
-const social = document.querySelector('.socialmedia-container');
-const imageContainer = document.querySelector('.image-container');
-const btnContainer = document.querySelector('.btn-container');
+/*SLIDER CLICK*/
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-document.body.addEventListener('click', function(){
-  document.body.style.overflowY = 'visible';
-  bg.classList.add('out');
-  entrance.style.display ='none';
-  allContainer.classList.add('in');
-});
-
-
-
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
 //IMAGE SLIDER
 const data = [
     {
-      img: "image/redefining_femininity/tatiana.jpg",
       name: 'TATIANA PANAKAL',
     },
     {
-      img: "image/redefining_femininity/tati.jpg",
-      name: 'TATIANA PANAKAL',
+       name: 'TATIANA PANAKAL',
     },
     {
-      img: "image/redefining_femininity/leticia.jpg",
+            name: 'LETICIA SOARES',
+    },
+    {
       name: 'LETICIA SOARES',
     },
     {
-      img: "image/redefining_femininity/leticia2.jpg",
-    name: 'LETICIA SOARES',
-    },
-    {
-      img:"image/redefining_femininity/veronica.jpg",
       name: 'VERONICA',
     },
     {
-      img:"image/redefining_femininity/olesia.jpg",
       name: 'OLESIA PEROVA',
     },
     {
-      img: "image/redefining_femininity/sophie-h.jpg",
       name: 'SOPHIE HABERMANN',
     },
     {
-      img:"image/redefining_femininity/anya.jpg",
       name: 'HANNA',
     },
     {
-      img: "image/redefining_femininity/eva1.jpg",
       name: 'EVA KRISTINA',
     },
     {
-      img: "image/redefining_femininity/eva2.jpg",
       name: 'EVA KRISTINA',
     },
     {
-      img: "image/redefining_femininity/mariya.jpg",
       name: 'MARIA BESSONOVA',
     },
-  
     {
-      img: "image/redefining_femininity/danae.jpg",
       name: 'DANAE LOU',
     },
     {
-      img: "image/redefining_femininity/alyssa.jpg",
       name: 'ALYSSA TOWNING',
     },
     {
-      img: "image/redefining_femininity/belle.jpg",
       name: 'BELLE BROOKS',
     },
   ];
 
-  //select HTML image
-const img = document.querySelector('.image');
+   //select HTML image
 const number = document.querySelector('.number');
 let description = document.querySelector('.image-description');
 
@@ -100,7 +82,6 @@ window.addEventListener('DOMContentLoaded', function(){
 //setup showItem function
 function showItem(){
   const item = data[currentItem];
-  img.src = item.img;
   number.textContent = currentNumber;
   description.textContent = item.name;
 }
