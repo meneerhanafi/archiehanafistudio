@@ -1,0 +1,96 @@
+/*IMPORT FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Playfair+Display:ital@0;1&display=swap');
+
+
+/*BOILER PLATE*/
+/*The first 2 boiler plate is to remove any extra padding and margin*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html{
+  padding: 0;
+  margin: 0;
+}
+
+/*
+Overflow is hidden to hide content outside monitor
+*/
+body{
+  background: white;
+  overflow-x: hidden;
+  overflow-y:hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*ELEMENT BEFORE TAP*/
+.bg{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  background: url('image/fashion/denya.jpg');
+  background-size: cover;
+  background-position: 50% 37%;
+  background-repeat: no-repeat;
+  animation: entrance 1.5s ease-in;
+  overflow:hidden;
+}
+
+.entrance-title{
+  font-size: 2.75rem;
+  letter-spacing: -2.5px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+  padding:0;
+  text-align: center;
+  color:rgb(56, 56, 56);
+  margin-bottom:0;
+  animation: entrance 1.5s ease;
+  animation-delay: 1.25s;
+  animation-fill-mode: both;
+}
+.tap{
+  font-family: 'Montserrat', sans-serif;
+  font-size:0.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+  animation: bounce 1.5s ease-out infinite;  
+  animation-delay:1.75s;
+  animation-fill-mode: both;
+  color:rgb(56, 56, 56);
+}
+
+/*ANIMATION*/
+@keyframes entrance{
+  0%{
+    opacity:0;
+  }
+}
+
+@keyframes bounce{
+  0%{
+    opacity:0;
+    transform: translateY(-100%);
+  }
+}
+
+
+/*RESPONSIVENESS*/
+@media(min-width:1280px){
+  .entrance-title{
+    margin-top:1rem;
+    font-size:5rem;
+  }
+}
+
+
+
