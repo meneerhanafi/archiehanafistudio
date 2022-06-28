@@ -10,7 +10,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  
 }
 
 html{
@@ -23,7 +23,7 @@ Overflow is hidden to hide content outside monitor
 */
 body{
   background: white;
-  overflow: hidden;
+  overflow-x: hidden;
   animation: entrance 1.5s ease-in;
 }
 
@@ -243,7 +243,7 @@ button{
 }
 @media(min-width:1280px){
   nav a{
-    font-size:0.7rem;
+    font-size:0.6rem;
   }
 }
 
