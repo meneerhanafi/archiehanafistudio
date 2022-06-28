@@ -23,7 +23,7 @@ Overflow is hidden to hide content outside monitor
 */
 body{
   background: white;
-  overflow-x: hidden;
+  overflow: hidden;
   animation: entrance 1.5s ease-in;
 }
 
