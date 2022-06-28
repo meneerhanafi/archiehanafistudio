@@ -5,92 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="work.css"/>
-    <title>Archie Hanafi - Fashion Photographer</title>
+    <title>Archie Hanafi - Fashion Photographer | Island Life</title>
 </head>
 
 <body> 
 
-<!--APPEARANCE AFTER TAP-->
+<!--PUTTING ALL ELEMENTS IN ONE CLASS-->
 <div class="all-container">
 
-    <!--FIRST COLUMN-->
-    <div class="first-column">
-        <!--HEADER-->
-        <header>
-            <a href="index.html">
-                <h1 class="site-title">
-                    <i>Archie</i> Hanafi
-                </h1> 
-            </a>
-        </header>
+    <!--HEADER-->
+    <header>
+        <a href="index.html">
+                <i>Archie</i> Hanafi
+        </a>
+    </header>
+    <!--END OF HEADER-->
 
-        <!--NAVIGATION-->
-        <div class="navigation">
-            <nav>
-                <a href="fashion.html" 
-                class="inactive">FASHION</a>
-                <a href="redefining_femininity.html"
-                class="inactive">REDEFINING FEMININITY</a>
-                <a class="active">ISLAND LIFE</a>
-            </nav>
-            <div class="socialmedia-container">
-                <div class="logo-container left">
-                    <a href="mailto:archie@archiehanafistudio.com"><img src="image/email.png"></a>
-                </div>
-                <div class="logo-container">
-                    <a href="https://www.instagram.com/archiehanafistudio/" target="_blank"><img src="image/instagram.svg"></a>
-                </div>
+    <!--NAVIGATION-->
+    <div class="navigation">
+        <!--MENU-->
+        <nav>
+            <a class="active">FASHION</a>
+            <a href="redefining_femininity.html"
+            class="inactive">REDEFINING FEMININITY</a>
+            <a href="island_life.html"
+            class="inactive">ISLAND LIFE</a>
+        </nav>
+        <!--SOCIAL MEDIA-->
+        <div class="socialmedia-container">
+            <div class="logo-container left">
+               <a href="mailto:archie@archiehanafistudio.com"><img src="image/email.png"></a>
+            </div>
+            <div class="logo-container">
+                <a href="https://www.instagram.com/archiehanafistudio/" target="_blank"><img src="image/instagram.svg"></a>
             </div>
         </div>
-
     </div>
+    <!--END OF NAVIGATION-->
 
-    <!--SECOND COLUMN-->
-    <div class="second-column">
-        <!--IMAGE-->
-        <div class="content">
-    
-            <div class="image-container">
-                <img class="mySlides" src="image/island_life/polina.jpg">
-                <img class="mySlides" src="image/island_life/thaikila8.jpg">
-                <img class="mySlides" src="image/island_life/astrid3.jpg">
-                <img class="mySlides" src="image/island_life/skye.jpg">
-                <img class="mySlides" src="image/island_life/tann.jpg">
-                <img class="mySlides" src="image/island_life/lip2.jpg">
-                <img class="mySlides" src="image/island_life/laura.jpg">
-                <img class="mySlides" src="image/island_life/scampi5.jpg">
-                <img class="mySlides" src="image/island_life/balquisse2.jpg">
-                <img class="mySlides" src="image/island_life/thaikila1.jpg">
-                <img class="mySlides" src="image/island_life/mvm1.jpg">
-                <img class="mySlides" src="image/island_life/scampi1.jpg">
-                <img class="mySlides" src="image/island_life/mvm2.jpg">
-                <img class="mySlides" src="image/island_life/alyona.jpg">
-                <img class="mySlides" src="image/island_life/mashakost.jpg">
+    <!--CONTENT-->
+    <div class="content">
+        <!--SLIDER CONTAINER-->
+        <div class="slider-container">
+            <!--SLIDE CLASS CONTAINS IMAGE. ONE SLIDE CLASS FOR ONE IMAGE-->
+            <div class="slide">
+                <img src="image/island_life/polina.jpg">
             </div>
+            <div class="slide">
+                <img src="image/island_life/thaikila8.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/astrid3.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/skye.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/tann.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/lip2.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/laura.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/scampi5.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/thaikila1.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/mvm1.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/scampi1.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/mvm2.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/alyona.jpg">
+            </div>
+            <div class="slide">
+                <img src="image/island_life/mashakost.jpg">
+            </div>
+            
         </div>
-
-        <!--DESCRIPTION-->
-        <div class="image-description">
-            <p>Denya Altevers, Los Angeles</p>
-        </div>
-    
-        <!--BUTTON-->
-        <div class="btn-container">
-            <img class="prevButton"
-            onclick="plusDivs(-1)"
-            src="image/icons8-back-100.png">
-            <p><span class="number">1</span>/14</p>
-            <img class="nextButton"
-            onclick="plusDivs(+1)"
-            src="image/icons8-forward-100.png">
-        </div>
+        <!--END OF SLIDER CONTAINER-->
 
     </div>
+    <!--END OF CONTENT-->
+
+    <!--BUTTON CONTAINER-->
+    <div class="btn-container">
+        <!--PREV BTN-->
+        <button class='prevBtn'>
+            <img src="image/ArrowLeft.svg">
+        </button>
+        <!--END OF PREV BTN-->
+
+        <!--NEXT BTN-->
+        <button class='nextBtn'>
+            <img src="image/ArrowRight.svg">
+        </button>
+        <!--END OF NEXT BTN-->
+    </div>
+    <!--END OF BUTTON CONTAINER-->
+
+    <!--COPYRIGHT-->
+    <div class="copyright">
+        <p>
+            &copy;2022 All Rights Reserved
+        </p>
+    </div>
+    <!--END OF COPYRIGHT-->
 
 </div>
+<!--END OF ALL CONTAINER-->
+
+
 
 <!--JAVASCRIPT-->
-<script src="islandLife.js"></script>
+<script src="work.js"></script>
+<!--END OF JAVASCRIPT-->
 
 </body>
 
