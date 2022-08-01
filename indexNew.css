@@ -29,7 +29,7 @@ a{
 }
 
 /*ELEMENT BEFORE TAP*/
-.bg{
+body::before, .bg{
   content:'';
   position:absolute;
   top:0;
@@ -43,6 +43,11 @@ a{
   background-repeat: no-repeat;
   animation: entrance 1.5s ease-in;
   overflow:hidden;
+  opacity:0;
+}
+
+body::before{
+  opacity:1;
 }
 
 .entrance-title{
